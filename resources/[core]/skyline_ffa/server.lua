@@ -1,1 +1,0 @@
--- Disconnect-Logik zentralisiert. Hier ist nichts mehr nötig.

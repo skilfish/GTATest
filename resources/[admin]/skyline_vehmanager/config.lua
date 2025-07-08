@@ -1,5 +1,0 @@
-Config = {}
-
-Config.AuthorizedRanks = {
-  "pl"
-}

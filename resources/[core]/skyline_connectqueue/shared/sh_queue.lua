@@ -1,1 +1,0 @@
--- playerDropped-Handler ausgelagert in core_disconnect.

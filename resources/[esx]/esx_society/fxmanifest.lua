@@ -1,1 +1,0 @@
--- fxmanifest for esx_society (modernized)

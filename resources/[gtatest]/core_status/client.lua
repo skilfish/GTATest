@@ -1,1 +1,0 @@
--- client.lua für core_status

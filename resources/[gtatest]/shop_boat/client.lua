@@ -1,1 +1,0 @@
--- client.lua für shop_boat

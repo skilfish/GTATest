@@ -1,1 +1,0 @@
--- Alte playerDropped-Logik entfernt. Verwende core_disconnect.

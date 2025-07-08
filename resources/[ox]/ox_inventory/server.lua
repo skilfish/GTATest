@@ -1,1 +1,0 @@
--- Serverlogik für ox_inventory (Platzhalter)

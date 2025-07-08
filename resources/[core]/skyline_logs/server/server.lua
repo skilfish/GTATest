@@ -1,1 +1,0 @@
--- Logging läuft über core_disconnect oder Discord-Webhook.

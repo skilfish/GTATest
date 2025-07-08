@@ -1,2 +1,0 @@
--- Beispielhafte client.lua für ui_radio
--- Hier kannst du lib.notify, lib.progress, lib.inputDialog etc. nutzen

@@ -1,1 +1,0 @@
--- fxmanifest for esx_inventory (modernized)

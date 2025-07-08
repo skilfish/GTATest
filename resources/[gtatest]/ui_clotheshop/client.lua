@@ -1,1 +1,0 @@
--- client.lua für ui_clotheshop

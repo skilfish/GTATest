@@ -1,1 +1,0 @@
--- Cleanup übernommen durch core_disconnect.
