@@ -1,0 +1,1 @@
+TriggerEvent("skyline_notify:Alert" , "TITEL", "MSG" , "TIME", "TYPE")

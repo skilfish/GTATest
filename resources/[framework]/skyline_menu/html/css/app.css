@@ -1,0 +1,120 @@
+@import url('https://fonts.cdnfonts.com/css/metropolis-2');
+.menu {
+	background-color: #131313;
+	font-family: Verdana;
+	min-width: 450px;
+	color: #fff;
+	box-shadow: 0px 0px 50px 0px #000;
+	position: absolute;
+	border-right: 2px solid #00b5dc;
+	border-bottom: 2px solid #00b5dc;
+	border-left: 2px solid #00b5dc;
+}
+
+.menu.align-left {
+	left: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-top-left {
+	left: 40;
+	top: 40;
+}
+
+.menu.align-top {
+	left: 50%;
+	top: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-top-right {
+	right: 10;
+	top: 40;
+}
+
+.menu.align-right {
+	right: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-bottom-right {
+	right: 40;
+	bottom: 40;
+}
+
+.menu.align-bottom {
+	left: 50%;
+	bottom: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-bottom-left {
+	left: 40;
+	bottom: 40;
+}
+
+.menu.align-center {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.menu .head {
+	background-image: url(https://i.ibb.co/G0DC9J5/bar.png);
+	background-repeat: no-repeat;
+	background-size: 121%;
+	background-position-x: -2px;
+	text-align: center;
+	height: 35px;
+	line-height: 40px;
+	font-family: Metropolis;
+	font-weight: 600;
+	padding-bottom: 5px;
+	color: #00b5dc;
+}
+
+.menu .menu-items {
+	justify-content: center;
+	max-height: 600px;
+	overflow-y: hidden;
+}
+
+.title {
+	padding-top:-10px;
+}
+
+.menu .menu-items .menu-item {
+	padding-top: 10px;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.6);
+	-box-shadow: inset 1px 0px 0px 1px rgba(0, 0, 0, 0.6);
+	height: 52px;
+	line-height: 32px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+.border {
+	margin: auto auto auto auto;
+	padding: 2;
+	background: linear-gradient(180deg, #00b5dc 0%, #00b5dc 64%);
+	width: 221px;
+	height: 30px;
+}
+
+.text {
+	background-color: #131313;
+	color: #00b5dc;
+	font-family: Metropolis;
+	font-weight: 500;
+	width: 220px;
+	height: 30px;
+	margin: auto auto auto auto;
+}
+
+.text.selected {
+	background: linear-gradient(180deg, #00b5dc 0%, #00b5dc 64%);
+	color:#131313;
+}

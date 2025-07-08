@@ -1,0 +1,763 @@
+body{
+  overflow: hidden;
+}
+
+.container{
+  /*background: linear-gradient(120.88deg, rgba(8, 97, 179, 0.91) -24.98%, rgba(0, 0, 0, 0.91) 57.52%);*/
+  background: linear-gradient(116.88deg, rgba(56, 35, 62, 0.77) 1.99%, rgba(28, 66, 54, 0.77) 50.59%, rgba(56, 35, 62, 0.77) 99.35%);
+  width: 100%;
+  height: 101%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo{
+  position: absolute;
+  width: 482px;
+  height: 332px;
+  left: 46rem;
+  top: 0rem;
+  -webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.semaforo{
+  position: absolute;
+  width: 28%;
+  height: 66%;
+  left: -8rem;
+  top: -3rem;
+  filter: blur(13px);
+  transform: rotate(22.87deg);
+}
+
+.carprint{
+  position: absolute;
+  width: 700.93px;
+  height: 702.9px;
+  left: 86rem;
+  top: -17rem;
+  transform: rotate(35.54deg);
+  opacity: 0.4;
+}
+
+.cone{
+  position: absolute;
+  width: 32%;
+  height: 41%;
+  left: 90rem;
+  top: 44rem;
+  filter: blur(13px);
+}
+
+.carbck{
+  position: absolute;
+  width: 43%;
+  height: 50%;
+  left: 76rem;
+  top: 38rem;
+  mix-blend-mode: screen;
+}
+
+.license-selector{
+  position: absolute;
+  width: 49.3%;
+  height: 43.6%;
+  left: 30rem;
+  top: 20rem;
+}
+
+
+.license-moto{
+  cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  width: 279px;
+  height: 475px;
+  background: linear-gradient(159.93deg, #38233E -14.44%, #1C4236 53.27%, #38233E 128.41%);
+  /*border: 2px solid rgba(255, 255, 255, 0.13);*/
+  box-shadow: 4px 7px 19px rgba(0, 0, 0, 0.43);
+  border-radius: 20px;
+}
+
+.license-moto:hover{
+    -webkit-animation: jello-vertical 0.9s both;
+            animation: jello-vertical 0.9s both;
+  
+}
+
+.license-moto-type{
+  position: absolute;
+  width: 102px;
+  height: 75px;
+  left: 5.7rem;
+  top: 1rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 78px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.59);
+}
+
+.license-moto-type-text{
+  position: absolute;
+  width: 241px;
+  height: 51px;
+  left: 1rem;
+  top: 6rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 33px;
+  text-align: center;
+  color: #FFFFFF;  
+}
+
+.license-moto-ellipse-ext{
+  box-sizing: border-box;
+  position: absolute;
+  width: 247px;
+  height: 247px;
+  left: 1rem;
+  top: 9rem;
+}
+
+.license-moto-ellipse-int{
+  box-sizing: border-box;
+  position: absolute;
+  width: 209px;
+  height: 209px;
+  left: 2rem;
+  top: 10rem;
+}
+
+.license-moto-img{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: -1rem;
+  top: 11rem;
+  z-index: 2;
+}
+
+.license-moto-price{
+  position: absolute;
+  width: 192px;
+  height: 42px;
+  left: 3rem;
+  top: 24rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 41px;
+  line-height: 52px;
+  text-align: center;
+  color: #0dc6c6;
+}
+
+.license-car{
+  box-sizing: border-box;
+  position: absolute;
+  width: 279px;
+  height: 475px;
+  left: 20rem;
+  background: linear-gradient(159.93deg, #38233E -14.44%, #1C4236 53.27%, #38233E 128.41%);
+  /*border: 2px solid rgba(255, 255, 255, 0.13);*/
+  box-shadow: 4px 7px 19px rgba(0, 0, 0, 0.43);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.license-car:hover{
+  /*background: linear-gradient(180deg, rgba(198, 168, 13, 0.14) 0%, rgba(217, 217, 217, 0) 100%);*/
+  -webkit-animation: jello-vertical 0.9s both;
+  animation: jello-vertical 0.9s both;
+}
+
+.license-car-type{
+  position: absolute;
+  width: 102px;
+  height: 75px;
+  left: 5.7rem;
+  top: 1rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 78px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.59);
+}
+
+.license-car-type-text{
+  position: absolute;
+  width: 241px;
+  height: 51px;
+  left: 1rem;
+  top: 6rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 33px;
+  text-align: center;
+  color: #FFFFFF;  
+}
+
+.license-car-ellipse-ext{
+  box-sizing: border-box;
+  position: absolute;
+  width: 247px;
+  height: 247px;
+  left: 1rem;
+  top: 9rem;
+}
+
+.license-car-ellipse-int{
+  box-sizing: border-box;
+  position: absolute;
+  width: 209px;
+  height: 209px;
+  left: 2rem;
+  top: 10rem;
+}
+
+.license-car-img{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0rem;
+  top: 13rem; 
+}
+
+.license-car-price{
+  position: absolute;
+  width: 192px;
+  height: 42px;
+  left: 3rem;
+  top: 24rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 41px;
+  line-height: 52px;
+  text-align: center;
+  color: #0dc6c6;
+}
+
+.license-truck{
+  box-sizing: border-box;
+  position: absolute;
+  width: 279px;
+  height: 475px;
+  left: 40rem;
+  background: linear-gradient(159.93deg, #38233E -14.44%, #1C4236 53.27%, #38233E 128.41%);
+  /*border: 2px solid rgba(255, 255, 255, 0.13);*/
+  box-shadow: 4px 7px 19px rgba(0, 0, 0, 0.43);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.license-truck:hover{
+  /*background: linear-gradient(180deg, rgba(198, 168, 13, 0.14) 0%, rgba(217, 217, 217, 0) 100%);*/
+  -webkit-animation: jello-vertical 0.9s both;
+  animation: jello-vertical 0.9s both;
+}
+
+.license-truck-type{
+  position: absolute;
+  width: 102px;
+  height: 75px;
+  left: 5.7rem;
+  top: 1rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 78px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.59);
+}
+
+.license-truck-type-text{
+  position: absolute;
+  width: 241px;
+  height: 51px;
+  left: 1rem;
+  top: 6rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 33px;
+  text-align: center;
+  color: #FFFFFF;  
+}
+
+.license-truck-ellipse-ext{
+  box-sizing: border-box;
+  position: absolute;
+  width: 247px;
+  height: 247px;
+  left: 1rem;
+  top: 9rem;
+}
+
+.license-truck-ellipse-int{
+  box-sizing: border-box;
+  position: absolute;
+  width: 209px;
+  height: 209px;
+  left: 2rem;
+  top: 10rem;
+}
+
+.license-truck-img{
+  position: absolute;
+  width: 264px;
+  height: 176px;
+  top: 11rem;
+}
+
+.license-truck-price{
+  position: absolute;
+  width: 192px;
+  height: 42px;
+  left: 3rem;
+  top: 24rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 41px;
+  line-height: 52px;
+  text-align: center;
+  color: #0dc6c6;
+}
+
+.exam-selector{
+  position: absolute;
+  width: 295px;
+  height: 387px;
+  left: 15rem;
+  top: 6rem;
+}
+
+.exam-selector-type-text{
+  position: absolute;
+  width: 227px;
+  height: 49px;
+  left: 572px;
+  top: 211px;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.exam-selector-type{
+  position: absolute;
+  width: 91px;
+  height: 113px;
+  left: 776px;
+  top: 153px;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 97px;
+  line-height: 122px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.theorical{
+  position: absolute;
+  width: 280px;
+  height: 93px;
+  left: 36rem;
+  top: 20rem;
+  background: linear-gradient(89.64deg, rgba(217, 217, 217, 0.27) -14.75%, rgba(217, 217, 217, 0) 93.44%);
+  border-radius: 20px;
+  cursor:pointer;
+}
+
+.theorical:hover{
+  background: linear-gradient(89.64deg, rgba(198, 168, 13, 0.27) -14.75%, rgba(217, 217, 217, 0) 93.44%);
+}
+
+.exam-selector-ellipse{
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  left: 1rem;
+  top: 1.7rem;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 50%;
+}
+
+.exam-selector-check{
+  position: absolute;
+  width: 46px;
+  height: 52px;
+  left: 0rem;
+  top: -0.6rem;
+}
+
+.exam-selector-theorical{
+  position: absolute;
+  width: 242px;
+  height: 60px;
+  left: 1.8rem;
+  top: 1.4rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.practice{
+  position: absolute;
+  width: 280px;
+  height: 93px;
+  left: 36rem;
+  top: 27rem;
+  background: linear-gradient(89.64deg, rgba(217, 217, 217, 0.27) -14.75%, rgba(217, 217, 217, 0) 93.44%);
+  border-radius: 20px;
+  cursor:pointer;
+}
+
+.practice:hover{
+  background: linear-gradient(89.64deg, rgba(198, 168, 13, 0.27) -14.75%, rgba(217, 217, 217, 0) 93.44%);
+}
+
+.exam-selector-practice{
+  position: absolute;
+  width: 242px;
+  height: 60px;
+  left: 1.8rem;
+  top: 1.4rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.questions{
+  position: absolute;
+  width: 931px;
+  height: 424px;
+  left: 31rem;
+  top: 21rem;
+}
+
+.border-left{
+  position: absolute;
+  width: 3px;
+  height: 228px;
+  background: #0dc6c6;
+}
+
+.border-top{
+  position: absolute;
+  width: 397px;
+  height: 3px;
+  background: #0dc6c6;
+}
+
+.border-right{
+  position: absolute;
+  width: 3px;
+  height: 228px;
+  left: 58rem;
+  top: 12.1rem;
+  background: #0dc6c6;
+}
+
+.border-bottom{
+  position: absolute;
+  width: 397px;
+  height: 3px;
+  left: 33.4rem;
+  top: 26.3rem;
+  background: #0dc6c6;
+}
+
+.question-text{
+  position: absolute;
+  width: 707px;
+  height: 67px;
+  left: 6.5rem;
+  top: 3rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 34px;
+  color: #FFFFFF;
+}
+
+.answer1{
+  position: absolute;
+  width: 707px;
+  height: 69px;
+  left: 6.5rem;
+  top: 10rem;
+  background: linear-gradient(90.01deg, rgba(217, 217, 217, 0.18) -6.78%, rgba(217, 217, 217, 0) 95.82%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.answer1:hover{
+  background: linear-gradient(90.01deg, rgba(198, 168, 13, 0.37) -6.78%, rgba(217, 217, 217, 0) 95.82%);
+}
+
+.answer-ellipse{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 1.5rem;
+  top: 1.5rem;
+  background: #0dc6c6;
+  border-radius: 50%;
+}
+
+.answer-text{
+  position: absolute;
+  width: 568px;
+  height: 34px;
+  left: 3.5rem;
+  top: 1.3rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.answer2{
+  position: absolute;
+  width: 707px;
+  height: 69px;
+  left: 6.5rem;
+  top: 15rem;
+  background: linear-gradient(90.01deg, rgba(217, 217, 217, 0.18) -6.78%, rgba(217, 217, 217, 0) 95.82%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.answer2:hover{
+  background: linear-gradient(90.01deg, rgba(198, 168, 13, 0.37) -6.78%, rgba(217, 217, 217, 0) 95.82%);
+}
+
+.answer3{
+  position: absolute;
+  width: 707px;
+  height: 69px;
+  left: 6.5rem;
+  top: 20rem;
+  background: linear-gradient(90.01deg, rgba(217, 217, 217, 0.18) -6.78%, rgba(217, 217, 217, 0) 95.82%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.answer3:hover{
+  background: linear-gradient(90.01deg, rgba(198, 168, 13, 0.37) -6.78%, rgba(217, 217, 217, 0) 95.82%);
+}
+
+.congrats{
+  position: absolute;
+  width: 791px;
+  height: 371px;
+  left: 35rem;
+  top: 18rem;
+}
+
+.congrats-title{
+  position: absolute;
+  width: 773px;
+  height: 99px;
+  left: 1rem;
+  top: 3rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 66px;
+  line-height: 83px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.congrats-text{
+  position: absolute;
+  width: 791px;
+  height: 44px;
+  left: 1rem;
+  top: 9rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.signals{
+  position: absolute;
+  width: 98px;
+  height: 122px;
+  left: 113rem;
+  top: 29rem; 
+}
+
+.signals-img{
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  left: 0.4rem;
+}
+
+.signals-text{
+  position: absolute;
+  width: 56px;
+  height: 29px;
+  top: 6rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 29px;
+  color: #FFFFFF;  
+}
+
+.signals-errors{
+  position: absolute;
+  width: 34px;
+  height: 28px;
+  left: 4rem;
+  top: 6rem;
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 29px;
+  color: #E10000;
+}
+
+
+
+
+  /* ----------------------------------------------
+ * Generated by Animista on 2022-6-18 12:20:51
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation vibrate-1
+ * ----------------------------------------
+ */
+@-webkit-keyframes jello-vertical {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-6-18 12:46:43
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,15 @@
+/* #paragraph {
+    left: 0%!important;
+} */
+
+#paragraph-home {
+    margin-right: 0%;
+}
+
+#paragraph-back {
+    display: none;
+}
+
+#paragraphicon {
+    display: none;
+}

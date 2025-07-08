@@ -1,0 +1,64 @@
+#messages-overview {
+    margin-right: 0%;
+    /* grid-row: 2 / 4; */
+}
+
+.messages-overview-element {
+    background-color: var(--element-bg-color);
+    
+    width: 100%;
+    min-height: 7vh;
+    box-shadow: var(--box-shadow) 0px 2px 8px 0px;
+    
+    border-radius: 1vh;
+
+    padding: 1vh;
+    display: grid;
+    grid-template-rows: 3vh auto;
+    grid-template-columns: 100%;
+
+   
+
+    margin-bottom: 1vh;
+}
+
+.messages-overview-element:hover {
+    background-color: var(--element-bg-colorh);
+    transition: 0.5s;
+}
+
+.messages-overview-element > .headline {
+    font-size: 2vh;
+
+    display: grid;
+    grid-template-columns: 65% 35%;
+    align-items: center;
+}
+
+.messages-overview-element > .headline > div {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.messages-overview-element > .headline > .time {
+    text-align: right;
+    font-size: 1.5vh;
+}
+
+.messages-overview-element > .element-container {
+    font-family: "Roboto";
+    line-height: 2vh;
+    max-height: 2vh;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Dispatch */
+
+#messages-chat {
+    grid-column: 1/4;
+}
+
+#message-chat-return {
+    margin-left: 1.5vh;
+}

@@ -1,0 +1,483 @@
+<html>
+
+<head>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <!-- CDN's -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
+    <!-- Color CDN -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/bank.css">
+    <link rel="stylesheet" href="./css/bitcoin.css">
+    <link rel="stylesheet" href="./css/broker.css">
+    <link rel="stylesheet" href="./css/business.css">
+    <link rel="stylesheet" href="./css/call.css">
+    <link rel="stylesheet" href="./css/calculator.css">
+    <link rel="stylesheet" href="./css/contacts.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/groupchat.css">
+    <link rel="stylesheet" href="./css/imagepreview.css">
+    <link rel="stylesheet" href="./css/message.css">
+    <link rel="stylesheet" href="./css/messagesnew.css">
+    <link rel="stylesheet" href="./css/notification.css">
+    <link rel="stylesheet" href="./css/radio.css">
+    <link rel="stylesheet" href="./css/settings.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/startscreen.css">
+    <link rel="stylesheet" href="./css/tooltip.css">
+    <link rel="stylesheet" href="./css/twitter.css">
+    <link rel="stylesheet" href="./css/advertisement.css">
+    <link rel="stylesheet" href="./css/dmarket.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/underapp.css">
+    <link href="./css/main.css" rel="stylesheet" type="text/css" />
+
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
+
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+   
+
+    <div class="container ns show">
+        <img src="./img/model1.png" class="phone-frame">
+
+        <div class="phone-container phone-background">
+            <div class="phone-startscreen hide">
+                <img class="phone-startscreen-logo" src="https://cdn.discordapp.com/attachments/875495427938611271/939471822284550164/white.png">
+
+                </img>
+                <div class="phone-startscreen-loadingbar">
+                    <div class="phone-startscreen-loadingbar-inner">
+                    </div>
+                </div>
+            </div>
+            <div class="phone-header">
+                <div></div>
+                <div id="phone-time">08:05</div>
+                <div></div>
+                <i class="fas fa-signal" id="phone-signal" data-toggle="tooltip" data-placement="left"></i>
+                <div class="battery">
+                    <div class="battery-level"></div>
+                </div>
+            </div>
+
+            
+            <div class="phone-applications">
+                <div class="phone-footer-applications">
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="1" style="background: linear-gradient(to bottom, #5dcc62 0%, #30b937 100%); margin-left: 0vh; margin-top: 1vh; " title="call" tooltipText="call" tooltipPos="top"
+                        data-app="call">
+                        <i class="ApplicationIcon fas fa-phone"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="2" style="background: linear-gradient(to bottom, #fa5306 0%, #e46e37 100%); margin-top: 1vh;" title="contacts" data-app="contacts">
+                        <i class="ApplicationIcon fa-solid fa-address-book"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="3" style="background: linear-gradient(to bottom, #3696d6 0%, #2991d6 100%); margin-top: 1vh;" title="messages" data-app="messages">
+                        <i class="ApplicationIcon fas fa-comment-alt"></i>
+                        
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="4" style="background: linear-gradient(to bottom, #2c2c2c 0%, #2b2b2b 100%); margin-top: 1vh;" title="settings" data-app="settings">
+                        <i class="ApplicationIcon fas fa-cogs"></i>
+                    </div>
+                </div>
+
+                <div class="phone-home-applications">
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="5" style="background: linear-gradient(to bottom, #2664eb 0%, #2d12c7 100%);" title="services" data-app="services">
+                        <i class="ApplicationIcon fas fa-circle-info"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" id="businessicon" data-placement="bottom" data-appslot="6" style="background: linear-gradient(to bottom, #8c47fc 0%, #6612c7 100%);" title="business" data-app="business">
+                        <i class="ApplicationIcon fas fa-briefcase"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="7" style="background: linear-gradient(to bottom, #1cddff 0%, #11a5a5 100%);" title="radio" data-app="radio">
+                        <i class="ApplicationIcon fas fa-microphone-alt"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="8" style="background: linear-gradient(to bottom, #d6d6d6 0%, #b4b4b4 100%);" title="camera" data-app="camera">
+                        <i class="ApplicationIcon fas fa-camera" style="color: rgb(24, 24, 24);"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="9" style="background: linear-gradient(to bottom, #319ffa 0%, #006eff 100%);" title="twitter" data-app="twitter">
+                        <i class="ApplicationIcon fab fa-twitter"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="9" style="background: linear-gradient(to bottom, #44b871 0%, #20db74 100%);" title="bank" data-app="bank">
+                        <i class="ApplicationIcon fa-solid fa-money-check-dollar"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="9" style="background: linear-gradient(to bottom, #e64d4d 0%, #db2020 100%);" title="bank" data-app="advertisement">
+                        <i class="ApplicationIcon fas fa-ad"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" id="dmarketicon" data-placement="bottom" data-appslot="9" style="background: linear-gradient(to bottom, #f095e1 0%, #cf81c2 100%);" title="bank" data-app="dmarket">
+                        <i class="ApplicationIcon fas fa-cubes"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="9" style="background: linear-gradient(to bottom, rgba(25,25,25,0.95) 0%, rgba(25,25,25,0.95) 100%);" title="calculator" data-app="calculator">
+                        <i class="ApplicationIcon fas fa-calculator"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" id="bitcoinicon" data-placement="bottom" data-appslot="9" style="background: linear-gradient(to bottom, rgba(255, 204, 0, 0.95) 0%, rgba(255, 224, 49, 0.95) 100%);" title="crypto" data-app="crypto">
+                        <i class="ApplicationIcon fab fa-bitcoin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="wallpaperpreviewclose">
+                <i class="fas fa-times wallpaperpreviewcloseicon" id="wallpaperpreviewclose"></i>
+            </div>
+
+
+            
+            <div class="phone-app-new" id="broker">
+                <div class="phone-app-content-new centergrid" id="broker-home">
+                     <div class="phone-app-headline-new centergrid" id="business-home-headline">
+                        Broker
+                    </div>
+                    <div class="phone-app-bigheadline">
+                        12.000€
+                    </div>
+                    <div class="phone-app-smallheadline greencolor">
+                        <i class="fa-solid fa-arrow-up"></i> 1.000€ (0.73%)
+                    </div>
+                    <div class="broker-graphcolumn margin-top-1">
+                        <canvas id="brokerhomeChart" style="width:100%;height:100%;"></canvas>
+                    </div>
+                    <div class="phone-app-mediumheadline margin-top-1">
+                        Investments
+                    </div>
+                    <div class="broker-home-elements">
+                        <div class="broker-investment-element" data-name="Mercedes-Benz Group" data-price="69.39" data-change="10" data-changep="3.25" data-change2="1" data-bought="70">
+                            <div class="broker-investment-element-image">
+                                <img src="https://motor.ru/imgs/2021/11/06/22/5008656/a7e55105addc7c05a9706d183d4c00e23b104af7.jpg" alt="">
+                            </div>
+                            <div class="broker-investment-element-name">
+                                Mercedes-Benz Group
+                            </div>
+                            <div class="broker-investment-element-stats">
+                                <div class="broker-investment-element-stats-amount">
+                                    200
+                                </div>
+                                131,32€
+                            </div>
+                            <div class="broker-investment-element-change">
+                                <div class="greencolor">
+                                    <i class="fa-solid fa-arrow-up"></i>  3.5%
+                                </div>
+                                
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone-app-content-new centergrid" id="broker-stocks">
+                    <div class="phone-app-headline-new centergrid" id="business-home-headline">
+                       Stocks
+                   </div>
+                   <form class="phone-app-searchbarform-new" id="broker-stocks-searchbar"><input type="text" class="phone-app-searchbarform-input-new"  id="messages-overview-searchbar" placeholder="Search"></form>
+                   <div class="broker-stocks-container">
+                        <div class="broker-investment-element broker-stocks-element" data-name="Mercedes-Benz Group" data-price="69,39" data-change="10" data-changep="3.25" data-change2="1">
+                            <div class="broker-investment-element-image">
+                                <img src="https://motor.ru/imgs/2021/11/06/22/5008656/a7e55105addc7c05a9706d183d4c00e23b104af7.jpg" alt="">
+                            </div>
+                            <div class="broker-investment-element-name">
+                                Mercedes-Benz Group
+                            </div>
+                            <div class="broker-investment-element-stats">
+                                69,39€
+                            </div>
+                            <div class="broker-investment-element-change">
+                                <div class="greencolor">
+                                    <i class="fa-solid fa-arrow-up"></i>  3.25%
+                                </div>
+                                
+                            
+                            </div>
+                        </div>
+                   </div>
+                </div>
+
+                <div class="phone-app-content-new centergrid" id="broker-stock">
+                    <div class="phone-app-bigheadline centergrid" id="broker-stock-headline">
+                        Mercedes-Benz Group
+                    </div>
+                    <div class="phone-app-bigheadline" id="broker-stock-price">
+                        12.000€
+                    </div>
+                    <div class="phone-app-smallheadline greencolor" id="broker-stock-change">
+                        <i class="fa-solid fa-arrow-up"></i> 1.000€ (0.73%)
+                    </div>
+                    <div class="margin-top-1"></div>
+                    <div class="broker-graphcolumn margin-top-1" id="broker-home-graphcoumn">
+                        <canvas id="brokerStockchart" style="width:100%;height:100%;"></canvas>
+                    </div>
+                    <div class="margin-top-1"></div>
+
+                    <div class="phone-app-splittext">
+                        <div class="font-size-2">
+                            Price
+                        </div>
+                        <div class="font-size-2 text-align-right" id="broker-stock-purchaseprice">
+                            0€
+                        </div>
+                      
+                    </div>
+    
+                    <div class="margin-top-2"></div>
+                    <input type="number" class="inputnew text-align-center" id="broker-stock-input-amount">
+                    <div class="margin-top-3"></div>
+                    <button class="green">
+                        BUY
+                    </button>
+                </div>
+
+                <div class="phone-app-content-new centergrid" id="broker-mystock">
+                    <div class="phone-app-bigheadline centergrid" id="broker-mystock-headline">
+                        Mercedes-Benz Group
+                    </div>
+                    <div class="phone-app-bigheadline" id="broker-mystock-price">
+                        12.000€
+                    </div>
+                    <div class="phone-app-smallheadline greencolor" id="broker-mystock-change">
+                        <i class="fa-solid fa-arrow-up"></i> 1.000€ (0.73%)
+                    </div>
+                    <div class="margin-top-3"></div>
+                    <div class="phone-app-splittext">
+                        <div class="font-size-2">
+                            Buy in
+                        </div>
+                        <div class="font-size-2">
+                            Performance
+                        </div>
+                        <div class="font-size-1n5" id="broker-mystock-buyin">
+                            9.000€
+                        </div>
+                        <div class="font-size-1n5 greencolor" id="broker-mystock-performance">
+                            <i class="fa-solid fa-arrow-up"></i> 1.000€ (0.73%)
+                        </div>
+                    </div>
+                   
+                   
+                    <div class="margin-top-2"></div>
+                    <input type="number" class="inputnew text-align-center" id="broker-mystock-input-amount">
+                    <div class="margin-top-1"></div>
+                    <div class="phone-app-underheadline">
+                        Price: <font id="broker-mystock-purchaseprice"></font>
+                    </div>
+                    <div class="margin-top-1"></div>
+                    <button class="green">
+                        BUY
+                    </button>
+                    <div class="margin-top-2"></div>
+                    <button class="red">
+                        SELL
+                    </button>
+
+                </div>
+
+                <div class="phone-app-content-new centergrid" id="broker-exchange">
+                    <div class="input-url-area" id="broker-exchange-inputarea-amount">
+                        <div class="input-selection-area-element">
+                            <div class="input-url-area-headline">
+                                <div>
+                                    <i class="fa-brands fa-buffer"></i> <font class="locale_enterimage">ENTER AMOUNT</font>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="url" placeholder="Amount"  id="broker-exchange-inputarea-amountinput">
+                            </div>
+                        </div>
+                        <div class="input-selection-area-cancel greencolor locale_submit" id="broker-exchange-inputarea-amount-submit">
+                            Submit
+                        </div>
+                        <div class="input-selection-area-cancel redcolor locale_cancel" id="broker-exchange-inputarea-amount-cancel">
+                            Cancel
+                        </div>
+                    </div>
+
+                    <div class="input-url-area" id="broker-exchange-inputarea-id">
+                        <div class="input-selection-area-element">
+                            <div class="input-url-area-headline">
+                                <div>
+                                    <i class="fa-solid fa-id-badge"></i> <font class="locale_enterimage">ENTER PLAYER ID</font>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="url" placeholder="ID"  id="broker-exchange-inputarea-id-input">
+                            </div>
+                        </div>
+                        <div class="input-selection-area-cancel greencolor locale_submit" id="broker-exchange-inputarea-id-submit">
+                            Submit
+                        </div>
+                        <div class="input-selection-area-cancel redcolor locale_cancel" id="broker-exchange-inputarea-id-cancel">
+                            Cancel
+                        </div>
+                        <div class="input-selection-area-cancel locale_back" id="broker-exchange-inputarea-id-back">
+                            Back
+                        </div>
+                    </div>         
+
+                    <div class="phone-app-headline-new centergrid" id="business-home-headline">
+                       Exchange
+                   </div>
+                   <form class="phone-app-searchbarform-new" id="broker-exchange-searchbar"><input type="text" class="phone-app-searchbarform-input-new"  id="broker-exchange-searchbar-input" placeholder="Search"></form>
+                   <div class="broker-exchange-container">
+                        <div class="broker-investment-element"  data-name="Mercedes-Benz Group" data-price="69.39" data-change="10" data-changep="3.25" data-change2="1" data-bought="70">
+                            <div class="broker-investment-element-image">
+                                <img src="https://motor.ru/imgs/2021/11/06/22/5008656/a7e55105addc7c05a9706d183d4c00e23b104af7.jpg" alt="">
+                            </div>
+                            <div class="broker-investment-element-name">
+                                Mercedes-Benz Group
+                            </div>
+                            <div class="broker-investment-element-stats">
+                                <div class="broker-investment-element-stats-amount">
+                                    200
+                                </div>
+                                131,32€
+                            </div>
+                            <div class="broker-investment-element-change">
+                                <div class="greencolor">
+                                    <i class="fa-solid fa-arrow-up"></i>  3.5%
+                                </div>
+                                
+                            
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="phone-app-content-new centergrid" id="broker-user">
+                    <div class="phone-app-headline-new centergrid" id="business-home-headline">
+                        User
+                    </div>
+                    <div class="phone-app-bigheadline">
+                        Stats
+                    </div>
+
+                    <div class="phone-app-splittext">
+                        <div class="font-size-2">
+                            Bought
+                        </div>
+                        <div class="font-size-2">
+                            Sold
+                        </div>
+                        <div class="font-size-1n5" id="business-user-bought">
+                            9.000€
+                        </div>
+                        <div class="font-size-1n5" id="business-user-sold">
+                            11.000€
+                        </div>
+                        <div class="margin-top-1"></div>
+                        <div class="margin-top-1"></div>
+                        <div class="font-size-2">
+                            Profit
+                        </div>
+                        <div class="font-size-2">
+                            
+                        </div>
+                        <div class="font-size-1n5 greencolor" id="business-user-performance">
+                           2.000€
+                        </div>
+                        <div class="font-size-1n5 greencolor">
+                            
+                        </div>
+                    </div>
+                    <div class="margin-top-2"></div>
+                    <div class="phone-app-bigheadline">
+                        History
+                    </div>
+                    <div class="broker-user-items">
+                        <div class="phone-app-mediumheadline">
+                            Today
+                        </div>
+                        <div class="broker-investment-element"  data-name="Mercedes-Benz Group" data-price="69.39" data-change="10" data-changep="3.25" data-change2="1" data-bought="70">
+                            <div class="broker-investment-element-image">
+                                <img src="https://motor.ru/imgs/2021/11/06/22/5008656/a7e55105addc7c05a9706d183d4c00e23b104af7.jpg" alt="">
+                            </div>
+                            <div class="broker-investment-element-name">
+                                Mercedes-Benz Group
+                            </div>
+                            <div class="broker-investment-element-stats">
+                                <div class="broker-investment-element-stats-amount">
+                                    200
+                                </div>
+                                69,49€
+                            </div>
+                            <div class="broker-investment-element-change">
+                                18:01
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="phone-app-footer-new centergrid">
+                    <i class="fa-solid fa-house purplecolor" id="footer-broker-home"></i>
+                    <i class="fa-solid fa-magnifying-glass" id="footer-broker-stocks"></i>
+                    <i class="fa-solid fa-right-left" id="footer-broker-exchange"></i>
+                    <i class="fa-solid fa-user" id="footer-broker-user"></i>
+                </div>
+            </div>
+
+            
+
+            <div class="incallsymbol">
+                <i class="fas fa-phone-volume"></i>
+            </div>
+
+            <div class="bigincallsymbol">
+                <div class="left60">
+                    <div class="callheadername">
+                        123-4566
+                    </div>
+                </div>
+                <div class="left40">
+                        <i class="callheadericons fas fa-compress-alt" id="headerminimize"></i>
+                        <i class="callheadericons fas fa-window-maximize" id="headermaximize"></i>
+                        <i class="callheadericons fas fa-phone-slash" id="headerendcall"></i>
+                </div>
+            </div>
+
+            <div class="phone-homebar show" id="phone-homebar">
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="notification ">
+
+    </div>
+
+    <script src="./js/bank.js "></script>
+    <script src="./js/bitcoin.js "></script>
+    <script src="./js/business.js "></script>
+    <script src="./js/broker.js "></script>
+    <script src="./js/call.js "></script>
+    <script src="./js/calculator.js "></script>
+    <script src="./js/contact.js "></script>
+    <script src="./js/dontwalk.js "></script>
+    <script src="./js/messages.js "></script>
+    <script src="./js/setlocale.js "></script>
+    <script src="./js/locales.js "></script>
+    <script src="./js/locales/locale_de.js"></script>
+    <script src="./js/twitter.js "></script>
+    <script src="./js/advertisement.js "></script>
+    <script src="./js/dmarket.js "></script>
+    <script src="./js/settings.js "></script>
+   
+</body>
+
+
+</html>

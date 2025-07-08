@@ -1,0 +1,102 @@
+.notification {
+    display: block;
+    position: fixed;
+    width: 30vh;
+    height: 98vh;
+    top: 1vh;
+    left: 1vh;
+    overflow: hidden;
+
+    font-family: 'RobotoMedium';
+
+}
+
+.notify {
+    background-color: var(--notification-bg);
+    color: var(--font-color);
+    box-shadow: var(--box-shadow) 0px 2px 8px 0px;
+    border-radius: 1vh;
+    width: 30vh;
+    min-height: 6vh;
+    display: grid;
+   grid-template-columns: 15% 82.5% 2.5%;
+    grid-template-rows: 100%;
+    /* padding: 1vh; */
+
+    justify-content: center;
+    /* align-items: center; */
+    overflow: hidden;
+
+    margin-bottom: 1vh;
+}
+
+.notify > .iconspace {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 1.5vh; */
+    
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 1vh; */
+}
+
+.notify > .iconspace > i {
+    font-size: 2.25vh;
+}
+
+.notify > .messagespace {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 3vh auto;
+
+    justify-content: center;
+    overflow: hidden;
+    white-space: normal;
+    font-weight: 400;
+    padding-bottom: 0.5vh;
+    /* align-items: center; */
+}
+
+.notify > .messagespace > .headline {
+    font-weight: 400;
+    height: 100%;
+    padding-top: 0.5vh;
+    line-height: 2.5vh;
+    font-size: 1.75vh;
+        font-family: 'RobotoMedium';
+}
+
+.notify > .messagespace > .body {
+    font-weight: 400;
+    height: 100%;
+    line-height: 2vh;
+    font-size: 1.5vh;
+        font-family: 'Roboto';
+}
+
+.info {
+    color: var(--info);
+}
+
+.error {
+    color: var(--error);
+}
+
+.warning {
+    color: var(--warning);
+}
+
+.success {
+    color:var(--success);
+}
+
+.frqradio {
+    color:var(--radio);
+}
+
+.broker {
+    color:var(--broker);
+}

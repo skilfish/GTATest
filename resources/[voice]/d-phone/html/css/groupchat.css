@@ -1,0 +1,344 @@
+/* #groupchat {
+    left: 0%!important;
+} */
+
+#groupchat-overview {
+    margin-right: 0%;
+}
+
+#groupchat-chat {
+    grid-column: 1/4;
+}
+
+.groupchat-overview-element {
+    background-color: var(--element-bg-color);
+    
+    width: 100%;
+    min-height: 6vh;
+    box-shadow: var(--box-shadow) 0px 2px 8px 0px;
+    
+    border-radius: 1vh;
+
+    padding: 1vh;
+    display: grid;
+    grid-template-rows: 2vh 3vh;
+    grid-template-columns: 20% 75%;
+    grid-column-gap: 5%;
+   
+    white-space: nowrap;
+    margin-bottom: 1vh;
+}
+
+.groupchat-overview-element:hover {
+    background-color: var(--element-bg-colorh);
+    transition: 0.5s;
+}
+
+.groupchat-overview-element > .headline {
+    font-size: 1.75vh;
+
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height: 100%;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.groupchat-overview-element > .headline > div {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.groupchat-overview-element > .headline > .time {
+    text-align: right;
+    font-size: 1.5vh;
+}
+
+.groupchat-overview-element > .image {
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    border-radius: 3vh;
+
+}
+
+.groupchat-overview-element > .image > img {
+    width: 100%;
+    height: 100%;
+   background-size: cover;
+}
+
+.groupchat-overview-element > .element-container {
+    grid-column: 2;
+    font-family: "Roboto";
+    line-height: 1.7vh;
+    max-height: 4vh;
+    color: var(--font-color);
+    /* white-space: nowrap; */
+    overflow: hidden;
+}
+
+.groupchat-chat-header {
+
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 1vh;
+    height: 5vh;
+    padding: 0.5vh 1vh 1vh;
+    background-color: var(--element-bg-color);
+    box-shadow: var(--box-shadow) 0px 2px 8px 0px;
+    border-radius: 1vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+
+    align-items: center;
+    justify-items: center;
+    white-space: nowrap;
+    z-index: 9;
+}
+
+.groupchat-chat-header:hover {
+    background-color: var(--element-bg-colorh);
+    transition: 0.5s;
+}
+
+.groupchat-chat-header > .headline2 {
+    width: 100%;
+    height: 4vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    text-align: left;
+}
+
+.groupchat-chat-header > .headline2 > img {
+    width: 4vh;
+    height: 4vh;
+    background-size: contain;
+    overflow: hidden;
+    border-radius: 4vh;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.groupchat-chat-header > .headline2 > div {
+    align-self: center;
+    padding-left: 1vh;
+    font-size: 1.75vh;
+}
+
+
+.groupchat-chat-header > i {
+    font-size: 2vh;
+    color: var(--accent-color);
+}
+
+
+.business-groupchat-content {
+    display: grid;
+    grid-template-rows: 89% 11%;
+    grid-template-columns: 100%;
+    height: 88%;
+    width: 100%;
+}
+
+
+
+.groupchat-settings-image {
+    width: 100%;
+    height: 14vh;
+    /* background-color: aqua; */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.groupchat-settings-image > div {
+    width: 14vh;
+    height: 14vh;
+    background-color: var(--element-bg-color);
+    border-radius: 7vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+.groupchat-settings-image > div > img{
+    width: 14vh;
+    height: 14vh;
+    background-color: var(--element-bg-color);
+    border-radius: 7vh;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.groupchat-settings-imagehover {
+    width: 14vh;
+    border-radius: 7vh;
+    height: 14vh;
+    opacity: 0;
+    /* transition: 0.5s; */
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 9;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 5vh;
+    transition: 0.5s;
+    color: var(--accent-color);
+}
+
+.groupchat-settings-imagehover:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.groupchat-settings-name {
+    width: 100%;
+    height: 5vh;
+    /* background-color: aqua; */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 2.5vh;
+    white-space: nowrap;
+}
+
+.groupchat-overview-new {
+    position: absolute;
+    bottom: 4vh;
+    right: 2.5vh;
+    width: 3.5vh;
+    height: 3.5vh;
+
+    text-align: center;
+    font-size: 2vh;
+    border-radius: 3vh;
+    background-color: var(--accent-color);
+    color: white;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    transition: 0.5s;
+}
+
+.groupchat-overview-new:hover {
+    background-color: var(--accent-colorh);
+    transition: 0.5s;
+
+}
+
+.groupchat {
+    color: var(--groupchat);
+}
+
+
+
+.business-groupchat-content-image {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 1%;
+    grid-template-columns: 100%;
+    height: 88%;
+    width: 100%;
+}
+
+.business-chat-content-image {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 1%;
+    grid-template-columns: 100%;
+    height: 95%;
+    width: 100%;
+}
+
+.messages-chat-imagearea {
+    overflow-x: auto;
+    /* display: none; */
+    width: 100%;
+    white-space: nowrap;
+    height: 0vh;
+    padding-right: 2vh;
+    grid-row: 2;
+    background-color: var(--bg-color);
+}
+
+.message-chat-image-area-element {
+    display: inline-block;
+    height: 80%;
+    margin-top: 2.5%;
+
+    /* overflow: hidden; */
+    margin-left: 5%;
+    width: 10vh;
+    border-radius: 1vh;
+    background-color: var(--element-bg-color);
+    box-shadow: var(--box-shadow) 0px 2px 8px 0px;
+    position: relative;
+}
+
+.message-chat-image-area-element > .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    overflow: hidden;
+    border-radius: 1vh;
+}
+
+.message-chat-image-area-element > .delete-element {
+    position: absolute;
+    top: -0.5vh;
+    right: -0.5vh;
+    width: 2vh;
+    height: 2vh;
+    border-radius: 2vh;
+
+    background-color: var(--red-color);
+    z-index: 2;
+    font-size: 1.5vh;
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.message-chat-image-area-element > .delete-element:hover {
+    background-color: var(--red-colorh);
+    transition: 0.5s;
+}
+
+.messages-chat-imagearea::-webkit-scrollbar {
+    height: 7px;              /* height of horizontal scrollbar ← You're missing this */
+    width: 4px;               /* width of vertical scrollbar */
+  }
+
+  .messages-chat-imagearea::-webkit-scrollbar-thumb {
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1vh solid var(--accent-color);  /* creates padding around scroll thumb */
+  }
+  
+  .groupchat-infomessages {
+    position: relative;
+    margin: auto;
+    margin-bottom: 1vh;
+    max-width: 80%;
+    min-width: 40%;
+    padding: 0.75vh;
+    text-align: center;
+    font-family: 'RobotoMedium';
+    font-size: 1.5vh;
+    color: var(--font-color);
+    border-radius: 1vh;
+    background-color: var( --new-color);
+    box-shadow: var(--box-shadow) 0px 2px 8px 0px;
+  }

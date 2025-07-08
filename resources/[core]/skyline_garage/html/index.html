@@ -1,0 +1,72 @@
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+
+
+    <div class="background">
+
+        	<img src="https://cdn.discordapp.com/attachments/984548871701155910/984712111982776340/skylne_no_bg.png" id="logo">
+			<div class="GARAGE_k_Class">
+				<span>GARAGE</span>
+			</div>
+			<div class="SKYLINE_Class">
+				<span>SKYLINE</span>
+			</div>
+
+            <div class="header">
+                <div class="close">
+                   <img src="img/close.png">
+                </div>
+                <div class="favtoggle" id="favtoggle" onclick="togglefav(this)">
+                    <img src="img/star.png">
+                </div>
+                <div class="searchbar" id="searchbar">
+                    <img src="img/search.png" onclick="togglesearchbar()"></img>
+                    <input class="search" id="search" oninput="searchfunction()"></input>
+                </div>    
+            </div>
+
+           
+            <div class="action actionselected" id="parkin" onclick="actionselect(this,'einparken')">
+                <img src="img/bar.png" id="p_bar">
+                <div class="actiontext">Einparken</div>
+             </div>
+
+                <div class="action" id="parkout" onclick="actionselect(this,'ausparken')">
+                    <img src="img/bar.png" id="o_bar">
+                    <div class="actiontext">Ausparken</div>
+                </div>
+            
+
+        <div class="actionside">
+         
+            <div class="headericon">
+                <i class="fas fa-warehouse"></i>
+            </div>
+            <div class="currentgarage">Meeting Point</div>
+          
+            <div id="parkaction" onclick="park()">
+                <i class="fas fa-car"></i><txt id="parkbtntxt">Einparken</txt>
+            </div>
+       
+            
+        </div>
+        <div class="inside">
+           
+            <div class="auto">
+                <div class="placeholder">Keine Fahrzeuge in der Nähe zum einparken</div>
+                <div class="vehlist" id="vehlist">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>

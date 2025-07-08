@@ -1,0 +1,548 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --maincolor: #03b5fc;
+    --maincolor--200: #03d7fd;;
+    --backgroundcolor: #03d7fd;
+    --backgroundinsidewindowcolor: rgb(22, 22, 22);
+}
+
+.GARAGE_k_Class {
+    left: 5.5vw;
+    top: 1.3vw;
+    position: absolute;
+    overflow: visible;
+    width: 0.8vw;
+    white-space: nowrap;
+    line-height: 0.2vw;
+    margin-top: -0.3vw;
+    text-align: right;
+    font-family: Poppins-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1vw;
+    color: rgba(255,255,255,1);
+}
+
+.SKYLINE_Class {
+    pointer-events: none;
+    left: 5.9vw;
+    top: 0.25vw;
+    position: absolute;
+    overflow: visible;
+    width: 0.8vw;
+    white-space: nowrap;
+    line-height: 5vw;
+    margin-top:  -2.5vw;
+    text-align: right;
+    font-family: Poppins-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.7vw;
+    color: #03d7fd;
+    letter-spacing: 0.1vw;
+}
+
+body {
+    background: url("img/background.png");
+    background-size: 100% 100%;
+    display: none;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.background {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120vh;
+    height: 65vh;
+    border-radius: 4vh;
+    z-index: 1;
+}
+
+.inside {
+    width: 70vh;
+    height: 55.5vh;
+    border-radius: 3.4vh;
+ 
+    z-index: 1;
+}
+
+.actionside {
+    width: 35vh;
+    height: 58.5vh;
+    border-radius: 4vh;
+    margin-top: 28vh;
+    z-index: 1;
+    margin-right: 5vh;
+}
+
+.headericon {
+    position: relative;
+    color: var(--maincolor);
+    font-size: 5vh;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.bogota {
+
+    position: fixed;
+    height: 16vh;
+    width: 16vh;
+    margin-top: 11vh; 
+    margin-bottom: -3vh; 
+    margin-left: 10vh;
+
+}
+
+
+
+.action {
+    overflow: visible;
+    white-space: nowrap;
+    line-height: 0.1vw;
+
+    text-align: right;
+    font-family: Poppins-Medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.2vw;
+    color: #03ecfd;
+    opacity: 0.4;
+}
+
+.action:hover {
+    cursor: pointer;
+}
+
+#parkin {
+    position: absolute;
+    bottom: -0.6vw;
+    left: 19vw;
+}
+
+#p_bar {
+    position: relative;
+    top: 3vw;
+    left: 2.9vw;
+    width: 100%;
+    height: 100%;
+}
+
+#parkout {
+    position: absolute;
+    bottom: -0.6vw;
+    left: 32vw;
+}
+
+#o_bar {
+    position: relative;
+    top: 3vw;
+    left: 2.8vw;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.action i {
+    color: var(--maincolor);
+    font-size: 1.3vh;
+    margin-left: 1vh;
+}
+
+.actionselected {
+    opacity: 1;
+    transition: .15s ease-in;
+}
+
+.actiontext {
+    margin-left: 1vh;
+    margin-top: 1vh;
+    font-size: 1.6vh;
+}
+
+.windows {
+    width: 100%;
+    height: 6vh;
+    border-radius: 1vh;
+    margin-top: 8vh;
+}
+
+.aktionen {
+    color: rgba(255, 255, 255, 0.596);
+    font-size: 2vh;
+    margin-top: 4vh;
+}
+
+.currentgarage {
+    text-align: center;
+    color: var(--maincolor--200);
+    margin-top: 1.5vh;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 6vh;
+
+    top: -1.5vw;
+}
+
+.close {
+    position: relative;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    margin-right: 2vh;
+    width: 3vh;
+    height: 3vh;
+    background-color:#012330;
+    border-radius: 0.5vh;
+    color: var(--maincolor--200);
+    font-size: 1.2vh;
+    border: .1vh solid rgba(0, 0, 0, 0.349);
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.close i {
+    margin-top: 0.1vh;
+    transition: 200ms;
+}
+
+.close i:hover {
+    color: var(--maincolor);
+}
+
+.searchbar {
+    position: relative;
+    float: right;
+    background-color:#012330;
+    width: 3vh;
+    height: 3vh;
+    border-radius: 0.5vh;
+    margin-top: 2vh;
+    margin-right: 1vh;
+    border: .1vh solid rgba(0, 0, 0, 0.349);
+    color: var(--maincolor--200);
+
+    transition: 300ms;
+}
+
+.searchbar.active {
+    width: 23vh;
+}
+
+.searchbar i {
+    position: absolute;
+    font-size: 1.2vh;
+    width: 3vh;
+    height: 3vh;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.search {
+    position: absolute;
+    display: none;
+    background-color: transparent;
+    border: none;
+    width: 80%;
+    height: 80%;
+    resize: none;
+    color: #03fcef;
+    float: right;
+    margin-left: 3vh;
+    top: 0.2vw;
+    cursor: pointer;
+}
+
+
+.search:focus {
+    border: none;
+    outline: none;
+}
+
+.searchbar:hover {
+    color: var(--maincolor);
+}
+
+.favtoggle {
+    position: relative;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    margin-right: 1vh;
+    width: 3vh;
+    height: 3vh;
+    background-color:#012330;
+    border-radius: 0.5vh;
+    color: var(--maincolor--200);
+    font-size: 1.2vh;
+    border: .1vh solid rgba(0, 0, 0, 0.349);
+    cursor: pointer;
+    transition: 200ms;
+}
+
+#parkaction {
+    position: relative;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    margin-top: 4.5vh;
+    color: var(--maincolor--200);
+    text-align: center;
+    border-radius: 1.5vh;
+    font-size: 1.5vh;
+    opacity: 0.3;
+    z-index: 1;
+
+    transition: 200ms;
+}
+
+#parkaction.active {
+    background-color: #03dffc71;
+    opacity: 1;
+}
+
+#parkaction.active:hover {
+    color: var(--maincolor);
+}
+
+#parkaction txt {
+    margin-left: 0.5vh;
+}
+
+.carfl {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cpyr {
+    position: relative;
+    text-align: center;
+    font-size: 1.3vh;
+    color: var(--maincolor--200);
+    opacity: 0.1;
+    top: 2vh;
+}
+
+.auto {
+    position: relative;
+    width: 100%;
+    height: 76%;
+    overflow: auto;
+}
+
+#carcontainer {
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;    
+    width: 20.5vh;
+    height: 8vh;
+    background-color: var(--backgroundcolor);
+    border-radius: 1.5vh;
+    margin-left: 2.2vh;
+    margin-top: 2vh;
+    float: left;
+    color: var(--maincolor--200);
+}
+
+.carcontainer {
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;    
+    width: 251px;
+    height: 120px;
+   background-image: url("img/carr.png");
+   background-size: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+    margin-left: 2.2vh;
+    margin-top: 2vh;
+    float: left;
+    color: transparent;
+    opacity: 0.6;
+}
+
+.carcontainer i {
+    font-size: 4vh;
+    margin-left: 1vh;
+}
+
+.carinformations {
+    height: 6vh;
+    width: 100%;
+    margin-top: 5.4vh;
+    margin-left: 9vh;
+    border-radius: 0.3vh;
+}
+
+.model {
+    color: var(--maincolor--200);
+    font-weight: 400;
+
+    font-size: 0.8vw;
+}
+
+.plate {
+    font-size: 1.2vh;
+    color: rgb(145, 145, 145);
+    font-weight: 400;
+}
+
+.nickname {
+    font-size: 0.9vh;
+    color: rgb(145, 145, 145);
+    font-weight: 400;
+}
+
+.carsetfav {
+    position: absolute;
+    margin-top: -4.6vw;
+    margin-right: 3vh;
+    right: 0;
+    color: var(--maincolor--200);
+}
+
+.carsetfav:hover {
+    cursor: pointer;
+}
+
+.carsetfav i {
+    font-size: 1.2vh
+}
+
+.carshowrename {
+    position: absolute;
+    margin-top: -8.2vh;
+    margin-right: 0.7vh;
+    right: 0;
+    color: var(--maincolor--200);
+}
+
+.carshowrename i {
+    font-size: 1.2vh
+}
+
+.renamewindow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #03dffc71;
+    border-radius: 1.5vh;
+}
+
+.renamewindow i {
+    color: var(--maincolor--200);
+    font-size: 1.4vh;
+    margin-top: 1vh;
+}
+
+.renamewindow txt {
+    position: absolute;
+    font-size: 1.1vh;
+    margin-left: 0.5vh;
+    margin-top: 1vh;
+    color: var(--maincolor--200);
+}
+
+.renameinput {
+    background-color: var(--backgroundinsidewindowcolor);
+    border: none;
+    margin-left: 1.1vh;
+    margin-top: 1vh;
+    border-radius: 1vh;
+    text-align: center;
+    color: var(--maincolor);
+    width: 15vh;
+}
+
+.renameinput:focus {
+    border: none;
+    outline: none;
+}
+
+
+#logo {
+    position: absolute;
+    transform: scale(13%);
+    left: -15.5vh;
+    top: -15vh;
+}
+.rename {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.7vh;
+}
+
+.rename i {
+    margin-right: 0.7vh;
+    transition: 200ms;
+}
+
+.rename:hover i{
+    color: var(--maincolor);
+}
+
+.placeholder {
+    position: absolute;
+    display: flex;
+    align-items: center; 
+    justify-content: center;   
+    width: 90%;
+    margin-left: 5%;
+    height: 4vh;
+    border-radius: 0.5vh;
+    float: left;
+    color: rgba(255, 255, 255, 0.185);
+    font-size: 2vh;
+    margin-top: 18vh;
+}
+
+::-webkit-scrollbar {
+    width: 0.3vh;
+    border-radius: 15vh;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 15vh;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--maincolor);
+    border-radius: 15vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(15, 15, 15); 
+    border-radius: 15vh;
+}        

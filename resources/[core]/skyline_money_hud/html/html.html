@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style id="applicationStylesheet" type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+	user-select: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+* {
+	font-family: Poppins;
+}
+	.mediaViewInfo {
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Canvas;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Canvas {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	#HUDv2 {
+		position: absolute;
+		width: 164px;
+		height: 87px;
+		left: 1729px;
+		top: 49px;
+		overflow: visible;
+	}
+
+	.voice1 {
+		position: absolute;
+		width: 50px;
+		height: 8px;
+		left: 58px;
+		top: 77px;
+		overflow: visible;
+	}
+	.voice2 {
+		position: absolute;
+		width: 50px;
+		height: 8px;
+		left: 58px;
+		top: 77px;
+		overflow: visible;
+	}
+	.voice3 {
+		position: absolute;
+		width: 50px;
+		height: 8px;
+		left: 58px;
+		top: 77px;
+		overflow: visible;
+	}
+	.voice4 {
+		position: absolute;
+		width: 50px;
+		height: 8px;
+		left: 58px;
+		top: 77px;
+		overflow: visible;
+	}
+	.voicemuted {
+		position: absolute;
+		width: 50px;
+		height: 8px;
+		left: 58px;
+		top: 77px;
+		overflow: visible;
+		visibility: hidden;
+	}
+	#Gruppe_3 {
+		position: absolute;
+		width: 37px;
+		height: 13px;
+		left: 121px;
+		top: 74px;
+		overflow: visible;
+	}
+	.funk {
+		position: absolute;
+		width: 14px;
+		height: 11px;
+		left: 23px;
+		top: 2px;
+		overflow: visible;
+	}
+	.funke {
+		position: absolute;
+		width: 14px;
+		height: 11px;
+		left: 23px;
+		top: 2px;
+		overflow: visible;
+	}
+	#microphone-solid_1 {
+		position: absolute;
+		width: 10px;
+		height: 13px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+
+	#microphone-solid_2 {
+		position: absolute;
+		width: 10px;
+		height: 13px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+
+	#blackcash {
+		position: absolute;
+		width: 164px;
+		height: 27px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#jucktnicht_14 {
+		fill: rgba(0,0,0,1);
+	}
+	.jucktnicht_14 {
+		position: absolute;
+		overflow: visible;
+		width: 153px;
+		height: 20px;
+		left: 11px;
+		top: 4px;
+	}
+	#Ellipse_1 {
+		fill: rgb(240, 36, 21);
+	}
+	.Ellipse_1 {
+		position: absolute;
+		overflow: visible;
+		width: 27px;
+		height: 27px;
+		left: 0px;
+		top: 0px;
+	}
+	#money-bill-wave-solid_1 {
+		position: absolute;
+		width: 14px;
+		height: 10px;
+		left: 7px;
+		top: 9px;
+		overflow: visible;
+	}
+	#content2 {
+		left: 57px;
+		top: 7px;
+		position: absolute;
+		overflow: visible;
+		width: 73px;
+		white-space: nowrap;
+		line-height: 15.99999713897705px;
+		margin-top: -1.3333334922790527px;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: SemiBold;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	#cash {
+		position: absolute;
+		width: 164px;
+		height: 27px;
+		left: 0px;
+		top: 35px;
+		overflow: visible;
+	}
+	#jucktnicht_14_r {
+		fill: rgba(0,0,0,1);
+	}
+	.jucktnicht_14_r {
+		position: absolute;
+		overflow: visible;
+		width: 153px;
+		height: 20px;
+		left: 11px;
+		top: 4px;
+	}
+	#Ellipse_1_s {
+		fill: rgb(39, 202, 7);
+	}
+	.Ellipse_1_s {
+		position: absolute;
+		overflow: visible;
+		width: 27px;
+		height: 27px;
+		left: 0px;
+		top: 0px;
+	}
+	#dollar-sign-solid {
+		position: absolute;
+		width: 8px;
+		height: 14px;
+		left: 9px;
+		top: 7px;
+		overflow: visible;
+	}
+	#content {
+		left: 57px;
+		top: 7px;
+		position: absolute;
+		overflow: visible;
+		width: 73px;
+		white-space: nowrap;
+		line-height: 15.99999713897705px;
+		margin-top: -1.3333334922790527px;
+		text-align: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: SemiBold;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+</style>
+<script id="applicationScript" type="text/javascript" src="rescale.js"></script>
+</head>
+<body>
+<script src="script.js"></script>
+<div id="Canvas">
+	<div id="HUDv2">
+		
+		<img class="voice1" src="https://i.ibb.co/BPwXsMs/voice1.png" id ="voicee">
+		<img class="voice2" src="https://i.ibb.co/82m0RLb/voice1.png" id="voicee">
+		<img class="voice3" src="https://i.ibb.co/P1Ky289/voice3.png" id="voicee">
+		<img class="voice4" src="https://i.ibb.co/9WkkV34/voice4.png" id="voicee"> 
+   		<img class="voicemuted" src="https://cdn.discordapp.com/attachments/788240573382787114/851098123329077248/muted.png" id="voicemuted">
+
+	
+
+			
+		<div id="Gruppe_3">
+			<img class="funk" src="https://i.ibb.co/XJZ4ppV/broadcast-tower-solid-12.png" id="funk">
+    	<img class="funke" src="https://cdn.discordapp.com/attachments/788240573382787114/851098899603390534/broadcast-tower-solid_1.png" id="funke">
+				
+			<img id="microphone-solid_1" src="https://i.ibb.co/b10HdnT/microphone-solid-1.png">
+			<img id="microphone-solid_2" src="https://i.ibb.co/4Pjmw1s/microphone-solid-1.png">
+
+		</div>
+		<div id="blackcash">
+			<svg class="jucktnicht_14">
+				<rect id="jucktnicht_14" rx="5" ry="5" x="0" y="0" width="153" height="20">
+				</rect>
+			</svg>
+			<svg class="Ellipse_1">
+				<ellipse id="Ellipse_1" rx="13.5" ry="13.5" cx="13.5" cy="13.5">
+				</ellipse>
+			</svg>
+			<img id="money-bill-wave-solid_1" src="https://cdn.discordapp.com/attachments/788240573382787114/851097793744338944/money-bill-wave-solid_1.png">
+				
+			<div class="schwarzmoney">
+				<div id="content2">0$</div>
+			</div>
+		</div>
+		<div id="cash">
+			<svg class="jucktnicht_14_r">
+				<rect id="jucktnicht_14_r" rx="5" ry="5" x="0" y="0" width="153" height="20">
+				</rect>
+			</svg>
+			<svg class="Ellipse_1_s">
+				<ellipse id="Ellipse_1_s" rx="13.5" ry="13.5" cx="13.5" cy="13.5">
+				</ellipse>
+			</svg>
+			<img id="dollar-sign-solid" src="https://cdn.discordapp.com/attachments/788240573382787114/851097738576920596/dollar-sign-solid.png">
+				
+			<div class="money">
+				<div id="content">0$</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
