@@ -1,0 +1,1 @@
+-- fxmanifest for esx_shops (modernized)
