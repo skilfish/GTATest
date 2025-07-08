@@ -1,0 +1,2 @@
+-- Beispielhafte client.lua für ui_progressbar
+-- Hier kannst du lib.notify, lib.progress, lib.inputDialog etc. nutzen
