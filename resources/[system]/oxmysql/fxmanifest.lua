@@ -1,0 +1,1 @@
+-- fxmanifest.lua for oxmysql (Beispiel)

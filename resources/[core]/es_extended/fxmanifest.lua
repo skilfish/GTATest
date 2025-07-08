@@ -1,0 +1,1 @@
+-- fxmanifest.lua for es_extended v1.11.0 (Beispiel)
