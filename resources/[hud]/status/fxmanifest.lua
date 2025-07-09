@@ -1,0 +1,1 @@
+-- fxmanifest.lua placeholder for [hud]/status/

@@ -1,0 +1,1 @@
+-- fxmanifest.lua placeholder for [ox_core]/ox_core/

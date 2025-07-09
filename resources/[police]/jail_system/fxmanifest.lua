@@ -1,0 +1,1 @@
+-- fxmanifest.lua placeholder for [police]/jail_system/

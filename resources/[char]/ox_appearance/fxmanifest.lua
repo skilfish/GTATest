@@ -1,0 +1,1 @@
+-- fxmanifest.lua placeholder for [char]/ox_appearance/

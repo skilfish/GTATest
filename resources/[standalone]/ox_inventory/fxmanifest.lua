@@ -1,0 +1,1 @@
+-- fxmanifest.lua placeholder for [standalone]/ox_inventory/

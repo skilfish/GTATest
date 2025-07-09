@@ -1,0 +1,1 @@
+-- fxmanifest.lua placeholder for [admin]/admin_utils/
