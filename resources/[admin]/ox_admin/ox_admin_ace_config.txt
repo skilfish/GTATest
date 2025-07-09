@@ -1,0 +1,39 @@
+# Supporter
+add_ace group.supporter command.allow
+add_ace group.supporter "oxadmin.revive" allow
+add_ace group.supporter "oxadmin.heal" allow
+add_ace group.supporter "oxadmin.bring" allow
+add_ace group.supporter "oxadmin.noclip" allow
+
+# Moderator
+add_ace group.moderator command.allow
+add_ace group.moderator "oxadmin.kick" allow
+add_ace group.moderator "oxadmin.noclip" allow
+add_ace group.moderator "oxadmin.warn" allow
+add_ace group.moderator "oxadmin.ban" allow
+
+# Admin
+add_ace group.admin command.allow
+add_ace group.admin "oxadmin.ban" allow
+add_ace group.admin "oxadmin.unban" allow
+add_ace group.admin "oxadmin.giveitem" allow
+add_ace group.admin "oxadmin.givemoney" allow
+
+# Superadmin
+add_ace group.superadmin command.allow
+add_ace group.superadmin "oxadmin.*" allow
+
+# Developer
+add_ace group.dev command.allow
+add_ace group.dev "oxadmin.debug" allow
+add_ace group.dev "oxadmin.entityview" allow
+add_ace group.dev "oxadmin.resinfo" allow
+
+# Projektleitung
+add_ace group.owner command.allow
+add_ace group.owner "oxadmin.*" allow
+
+# Beispiel-Zuweisung (ersetzen mit echten Steam-IDs)
+# add_principal identifier.steam:110000123456789 group.supporter
+# add_principal identifier.steam:110000987654321 group.admin
+# add_principal identifier.steam:110000111122222 group.owner
