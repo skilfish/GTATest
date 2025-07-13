@@ -7,5 +7,3 @@ author 'ox collective (extended)'
 shared_script '@ox_lib/init.lua'
 client_script 'client.lua'
 server_script 'server.lua'
-
-server_script 'log.lua'
