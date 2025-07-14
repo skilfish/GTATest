@@ -1,1 +1,0 @@
--- fxmanifest.lua placeholder for [jobs]/ox_jobs/

@@ -1,0 +1,15 @@
+# ignore
+node_modules
+dist
+fxmanifest.lua
+.yarn.installed
+*.zip
+**.d.ts
+**.js
+*.tgz
+*.tsbuildinfo
+/package/
+/temp/
+
+# keep
+!./build.js
