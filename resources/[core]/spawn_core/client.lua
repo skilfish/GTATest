@@ -1,23 +1,24 @@
-local lastSavedCoords = nil
+local isFirstSpawn = true
 
-CreateThread(function()
-    while true do
-        Wait(10000)
-
-        local ped = PlayerPedId()
-        if ped and DoesEntityExist(ped) then
-            local coords = GetEntityCoords(ped)
-            if not lastSavedCoords or #(coords - lastSavedCoords) > 1.0 then
-                lastSavedCoords = coords
-                TriggerServerEvent('spawn_core:updateLastPos', coords)
-            end
-        end
+RegisterNetEvent('spawn_core:spawnPlayer', function(position)
+    if Config.EnableSpawnFade then
+        DoScreenFadeOut(500)
+        Wait(1000)
     end
-end)
 
-RegisterNetEvent('spawn_core:spawnAtLastPosition', function(pos)
-    DoScreenFadeOut(500)
-    Wait(500)
-    SetEntityCoordsNoOffset(PlayerPedId(), pos.x, pos.y, pos.z, false, false, false)
-    DoScreenFadeIn(500)
+    FreezeEntityPosition(PlayerPedId(), true)
+
+    SetEntityCoords(PlayerPedId(), position.x, position.y, position.z, false, false, false, true)
+    SetEntityHeading(PlayerPedId(), position.w)
+
+    if Config.EnableLoginFreeze then
+        Wait(2000)
+        FreezeEntityPosition(PlayerPedId(), false)
+    end
+
+    if Config.EnableSpawnFade then
+        DoScreenFadeIn(1000)
+    end
+
+    TriggerEvent('spawn_core:onSpawnReady')
 end)
