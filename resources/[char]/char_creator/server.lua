@@ -1,29 +1,28 @@
-RegisterNetEvent('char_creator:saveCharacter', function(data)
+local oxmysql = exports.oxmysql
+
+RegisterServerEvent("char_creator:saveCharacter")
+AddEventHandler("char_creator:saveCharacter", function(data)
     local src = source
-    local license = GetPlayerIdentifierByType(src, 'license')
-    local q = [[INSERT INTO characters (user_id, firstname, lastname, dob, gender) VALUES (
-        (SELECT id FROM users WHERE identifier = ?),
-        ?, ?, ?, ?
-    )]]
+    local license = GetPlayerIdentifierByType(src, "license")
 
-    exports.oxmysql:execute(q, {license, data.firstname, data.lastname, data.dob, data.gender})
-    SetPlayerRoutingBucket(src, 0)
-    TriggerClientEvent('spawn_core:requestSpawn', src)
-end)
-
-AddEventHandler('playerConnecting', function(_, _, deferrals)
-    local src = source
-    local license = GetPlayerIdentifierByType(src, 'license')
-    deferrals.defer()
-    Wait(0)
-
-    exports.oxmysql:execute('SELECT * FROM characters WHERE user_id = (SELECT id FROM users WHERE identifier = ?)', {license}, function(result)
-        if result and result[1] then
-            TriggerClientEvent('spawn_core:requestSpawn', src)
+    oxmysql:query("SELECT id FROM players WHERE identifier = ?", {license}, function(result)
+        local user_id
+        if result[1] then
+            user_id = result[1].id
         else
-            SetPlayerRoutingBucket(src, 1000 + src)
-            TriggerClientEvent('char_creator:start', src)
+            oxmysql:insert("INSERT INTO players (identifier) VALUES (?)", {license}, function(insertId)
+                user_id = insertId
+            end)
         end
-        deferrals.done()
+
+        Wait(200)
+
+        oxmysql:insert([[
+            INSERT INTO characters (user_id, firstName, lastName, fullName, gender, dateOfBirth, x, y, z, heading)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ]], {
+            user_id, data.firstName, data.lastName, data.fullName, data.gender, data.dob,
+            data.coords.x, data.coords.y, data.coords.z, data.coords.heading
+        })
     end)
 end)
