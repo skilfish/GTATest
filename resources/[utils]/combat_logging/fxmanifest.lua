@@ -1,15 +1,10 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'Combat Logging Module with Webhook Support'
-author 'ChatGPT'
-version '1.0.0'
+description 'Optimiertes Combat Logging System'
+author 'skilfish'
+version '1.0.1'
 
-client_scripts {
-    'client.lua'
-}
-
-server_scripts {
-    '@oxmysql/lib/MySQL.lua',
-    'server.lua'
-}
+shared_script 'config.lua'
+client_script 'client.lua'
+server_script 'server.lua'
