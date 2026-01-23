@@ -1,0 +1,30 @@
+# FiveM
+*.log
+*.cache
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (falls verwendet)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build
+dist/
+build/
+
+# Lokale Konfiguration
+config.local.lua
+.env
+.env.local
