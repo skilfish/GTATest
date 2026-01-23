@@ -17,6 +17,9 @@ und dieses Projekt folgt [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - Versionshistorie (CHANGELOG.md)
 - Git-Repository-Initialisierung
 - .gitignore für FiveM-Projekte
+- ESX Legacy Framework (esx_core) als Git-Submodule hinzugefügt
+  - Enthält alle Core-Ressourcen aus dem offiziellen Repository
+  - Enthält SQL-Skripte für Datenbank-Installation
 
 ### Struktur
 - Client-Verzeichnis mit main.lua

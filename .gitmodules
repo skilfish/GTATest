@@ -1,0 +1,3 @@
+[submodule "esx_core"]
+	path = esx_core
+	url = https://github.com/esx-framework/esx_core.git
